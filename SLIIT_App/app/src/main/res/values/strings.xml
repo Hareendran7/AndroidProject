@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SLIIT_App</string>
+
+    <string name="nav_drawer_open">Open nav drawer</string>
+    <string name="nav_drawer_close">Close nav drawer</string>
+
+    <string name="about_introduction">
+                We are a leading non-state degree awarding institute...
+    </string>
 </resources>
