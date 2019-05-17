@@ -1,5 +1,6 @@
 package com.example.sliit_app;
 
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -10,6 +11,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import android.content.Intent;
+
+
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -64,13 +69,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashBoard()).commit();
                 break;
             case R.id.nav_foc:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Faculty()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FacultyofComputing()).commit();
                 break;
             case R.id.nav_foe:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Faculty()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FacultyofEngineering()).commit();
                 break;
             case R.id.nav_fob:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Faculty()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FacultyofBusiness()).commit();
                 break;
             case R.id.nav_about_us:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUs()).commit();
@@ -79,6 +84,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ContactUs()).commit();
                 break;
             case R.id.nav_student_web:
+
+                //Opens a website
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.sliit.lk/"));
+                startActivity(browserIntent);
                 Toast.makeText(this, "Opening Student Web",Toast.LENGTH_SHORT).show();
                 break;
         }
