@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_student_web:
 
                 //Opens a website
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.sliit.lk/"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://courseweb.sliit.lk/"));
                 startActivity(browserIntent);
                 Toast.makeText(this, "Opening Student Web",Toast.LENGTH_SHORT).show();
                 break;
