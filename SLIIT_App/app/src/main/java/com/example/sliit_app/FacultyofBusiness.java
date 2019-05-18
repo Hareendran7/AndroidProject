@@ -21,14 +21,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.diegodobelo.expandingview.ExpandingItem;
 import com.diegodobelo.expandingview.ExpandingList;
 
 public class FacultyofBusiness extends Fragment {
-
-
-    // private ExpandingList mExpandingList;
 
     @Nullable
     @Override
