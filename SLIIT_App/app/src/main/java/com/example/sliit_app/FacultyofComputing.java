@@ -27,9 +27,6 @@ import com.diegodobelo.expandingview.ExpandingList;
 
 public class FacultyofComputing extends Fragment {
 
-
-   // private ExpandingList mExpandingList;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

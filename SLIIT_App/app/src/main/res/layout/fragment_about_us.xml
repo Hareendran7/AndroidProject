@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_light">
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,13 +13,4 @@
         android:padding="16dp"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"/>
-
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/about_introduction"
-        android:textSize="20sp"
-        android:padding="16dp"
-        />-->
-
 </RelativeLayout>
