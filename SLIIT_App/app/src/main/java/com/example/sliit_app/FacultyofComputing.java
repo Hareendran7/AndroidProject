@@ -70,16 +70,19 @@ public class FacultyofComputing extends Fragment {
         ((TextView) subItemThree.findViewById(R.id.sub_title)).setText("BSc(Hons)Information Systems Engineering");
 
         View subItemZero0 = item2.getSubItemView(0);
-        ((TextView) subItemZero0.findViewById(R.id.sub_title)).setText("Lecturer1");
+        ((TextView) subItemZero0.findViewById(R.id.sub_title)).setText("Prof.Chandimal Jayawardena");
 
         View subItemOne1= item2.getSubItemView(1);
-        ((TextView) subItemOne1.findViewById(R.id.sub_title)).setText("Lecturer2");
+        ((TextView) subItemOne1.findViewById(R.id.sub_title)).setText("Dr.Pradeepa Samarasinghe");
 
         View subItemOne2 = item2.getSubItemView(2);
-        ((TextView) subItemOne2.findViewById(R.id.sub_title)).setText("Lecturer3");
+        ((TextView) subItemOne2.findViewById(R.id.sub_title)).setText("Dr.Pradeep Abeygunawardhana");
 
         View subItemOne3 = item2.getSubItemView(3);
-        ((TextView) subItemOne3.findViewById(R.id.sub_title)).setText("Lecturer4");
+        ((TextView) subItemOne3.findViewById(R.id.sub_title)).setText("Dr.Nuwan Kodagoda");
+
+        View subItemOne4 = item2.getSubItemView(4);
+        ((TextView) subItemOne4.findViewById(R.id.sub_title)).setText("Dr.Anuradha Karunasena");
 
         //Setting expanding view icon and it's color
         item1.setIndicatorColorRes(R.color.white);
