@@ -9,9 +9,10 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_round" />
+        android:layout_width="54dp"
+        android:layout_height="83dp"
+
+        android:src="@drawable/sliit_icon" />
 
     <TextView
         android:layout_width="wrap_content"

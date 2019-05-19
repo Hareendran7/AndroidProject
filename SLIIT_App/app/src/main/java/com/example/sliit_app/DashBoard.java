@@ -42,7 +42,7 @@ public class DashBoard extends Fragment {
             public void run() {
                 handler.post(Update);
             }
-        }, 5000, 5000);
+        }, 3000, 3000);
 
         return view;
 
