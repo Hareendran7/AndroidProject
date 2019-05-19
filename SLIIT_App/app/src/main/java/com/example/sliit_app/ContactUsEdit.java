@@ -1,5 +1,6 @@
 package com.example.sliit_app;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -32,6 +33,8 @@ public class ContactUsEdit extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorDarkBlue)));
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus_edit);
 

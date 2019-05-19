@@ -1,5 +1,6 @@
 package com.example.sliit_app;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -18,6 +19,8 @@ public class ContactUsView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorDarkBlue)));
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus_view);
 
@@ -30,7 +33,6 @@ public class ContactUsView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ContactUs()).commit();
-
             }
         });
 

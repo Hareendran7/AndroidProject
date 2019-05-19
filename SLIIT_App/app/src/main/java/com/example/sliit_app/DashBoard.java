@@ -1,3 +1,4 @@
+//Dashboard - Home Screen of the app. Shows automatic slide show of images
 package com.example.sliit_app;
 
 import android.os.Bundle;
@@ -41,7 +42,7 @@ public class DashBoard extends Fragment {
             public void run() {
                 handler.post(Update);
             }
-        }, 3000, 3000);
+        }, 5000, 5000);
 
         return view;
 

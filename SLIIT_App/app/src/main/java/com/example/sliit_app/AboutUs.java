@@ -1,3 +1,4 @@
+//About us - Contains and shows the Google map view of SLIIT branches and Details
 package com.example.sliit_app;
 
 import android.Manifest;
