@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,12 +58,39 @@ public class ContactUs extends Fragment {
             }
         });
 
-        //Button click to insert record to database
+        //Button click to check for empty fields and  insert record to database
             submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                appendNewContactRequest();
-                Toast.makeText(getActivity(),"Record Successfully Inserted",Toast.LENGTH_LONG).show();
+
+                if(TextUtils.isEmpty(name.getText().toString())){
+                    Toast.makeText(getActivity(),"Please enter a name",Toast.LENGTH_LONG).show();
+                }
+
+
+                else if(TextUtils.isEmpty(email.getText().toString())){
+                    Toast.makeText(getActivity(),"Please enter a email",Toast.LENGTH_LONG).show();
+                }
+
+
+                else if(TextUtils.isEmpty(phone.getText().toString())){
+                    Toast.makeText(getActivity(),"Please enter a phone",Toast.LENGTH_LONG).show();
+                }
+
+
+                else if(TextUtils.isEmpty(subject.getText().toString())){
+                    Toast.makeText(getActivity(),"Please enter a subject",Toast.LENGTH_LONG).show();
+                }
+
+
+                else if(TextUtils.isEmpty(message.getText().toString())){
+                    Toast.makeText(getActivity(),"Please enter a message",Toast.LENGTH_LONG).show();
+                }
+
+                else {
+                    appendNewContactRequest();
+                    Toast.makeText(getActivity(), "Record Successfully Inserted", Toast.LENGTH_LONG).show();
+                }
            }
         });
     }
