@@ -51,13 +51,20 @@ public class FacultyofBusiness extends Fragment {
 
         //get a sub item View
         View subItemZero = item1.getSubItemView(0);
-        ((TextView) subItemZero.findViewById(R.id.sub_title)).setText("Accounting and Finance");
+        ((TextView) subItemZero.findViewById(R.id.sub_title)).setText("Marketing Management");
+
+        subItemZero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProgramBusiness()).commit();
+            }
+        });
 
         View subItemOne = item1.getSubItemView(1);
         ((TextView) subItemOne.findViewById(R.id.sub_title)).setText("Business Analytics");
 
         View subItemTwo = item1.getSubItemView(2);
-        ((TextView) subItemTwo.findViewById(R.id.sub_title)).setText("Marketing Management");
+        ((TextView) subItemTwo.findViewById(R.id.sub_title)).setText("Accounting and Finance");
 
         View subItemThree = item1.getSubItemView(3);
         ((TextView) subItemThree.findViewById(R.id.sub_title)).setText("Business Management");
@@ -74,6 +81,7 @@ public class FacultyofBusiness extends Fragment {
         View subItemOne3 = item2.getSubItemView(3);
         ((TextView) subItemOne3.findViewById(R.id.sub_title)).setText("Lecturer4");
 
+        //Setting expanding view icon and it's color
         item1.setIndicatorColorRes(R.color.white);
         item1.setIndicatorIconRes(R.drawable.ic_about_us);
 

@@ -67,7 +67,6 @@ public class ContactUs extends Fragment {
         });
     }
 
-
     //Method to store new contactUs request details to database
     private void appendNewContactRequest()
     {

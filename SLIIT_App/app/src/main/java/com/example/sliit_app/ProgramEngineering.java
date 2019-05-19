@@ -8,12 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-//Fragment to display IT program details
-public class Program extends Fragment {
+//Fragment to display Engineering program details
+public class ProgramEngineering extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_program,container,false);
+        return inflater.inflate(R.layout.fragment_program_engineering,container,false);
     }
 }

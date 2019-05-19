@@ -13,10 +13,11 @@ import java.util.List;
 
 public class RecyclerView_Config {
 
+    //Declaration of Widgets
     private Context mContext;
     private contactAdapter mContactAdapter;
 
-
+    //Configuration method to set the current layout and context
     public void setConfig(RecyclerView recyclerView, Context context, List<ContactUsClass> contacts, List<String> keys ){
         mContext= context;
 
@@ -25,6 +26,7 @@ public class RecyclerView_Config {
         recyclerView.setAdapter(mContactAdapter);
     }
 
+    //Inner class to get each item on button click from Recycler View
     class ContactItemView extends RecyclerView.ViewHolder {
 
         private TextView mName;
@@ -62,7 +64,7 @@ public class RecyclerView_Config {
             });
         }
 
-
+        //Binding values to each field from class attributes
         public void bind(ContactUsClass c1 , String key){
             mName.setText(c1.getName());
             mPhone.setText(c1.getPhone());
@@ -86,7 +88,7 @@ public class RecyclerView_Config {
             this.mKeys = mKeys;
         }
 
-        //Cretae and return a view to list items
+        //Create and return a view to list items
         @Override
         public ContactItemView onCreateViewHolder(ViewGroup parent, int viewType) {
             return new ContactItemView(parent);
