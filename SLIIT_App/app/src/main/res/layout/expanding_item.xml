@@ -22,7 +22,7 @@
         android:layout_centerVertical="true"
         android:fontFamily="@font/muli_black"
         android:gravity="center_vertical|start"
-        android:textColor="@color/white"
+        android:textColor="@color/colorNavyBlue"
         android:textSize="22sp"
-        android:textStyle="italic"/>
+        android:textStyle="bold"/>
 </RelativeLayout>
