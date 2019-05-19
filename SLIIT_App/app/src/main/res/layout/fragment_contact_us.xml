@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light">
+    android:background="@android:color/holo_blue_dark">
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,8 +21,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="101dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
         android:layout_marginBottom="192dp"
         android:text="Submit" />
 
@@ -33,9 +33,11 @@
         android:layout_above="@+id/txt_email"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="41dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="27dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName" />
@@ -47,9 +49,11 @@
         android:layout_above="@+id/txt_phone"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="95dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="22dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName" />
@@ -61,9 +65,11 @@
         android:layout_above="@+id/txt_subject"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="95dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:ems="10"
         android:hint="Phone"
         android:inputType="textPersonName" />
@@ -75,9 +81,11 @@
         android:layout_above="@+id/txt_message"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="37dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:ems="10"
         android:hint="Subject"
         android:inputType="textPersonName" />
@@ -89,9 +97,11 @@
         android:layout_above="@+id/btn_submit"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="44dp"
-        android:layout_marginEnd="93dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Message"
@@ -99,19 +109,20 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="243dp"
-        android:layout_height="109dp"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="87dp"
-        android:layout_marginEnd="81dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="98dp"
         android:layout_marginBottom="73dp"
         android:text="SLIIT Malabe Campus, New Kandy Road,Malabe
-                    +94 11 754 4801,
-                    +94 11 241 3901,
+                    +94 11 754 4801
+                    +94 11 241 3901
                     info@sliit.lk"
         android:textSize="18sp"
+        android:textColor="@color/colorNavyBlue"
         android:textStyle="bold" />
 
     <Button
@@ -121,8 +132,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="161dp"
-        android:layout_marginEnd="162dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
         android:layout_marginBottom="12dp"
         android:text="View" />
 
