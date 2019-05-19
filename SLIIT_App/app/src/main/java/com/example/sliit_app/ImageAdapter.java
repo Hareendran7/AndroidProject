@@ -45,5 +45,5 @@ public class ImageAdapter extends PagerAdapter {
         container.removeView((ImageView) object);
     }
 
-    
+
 }

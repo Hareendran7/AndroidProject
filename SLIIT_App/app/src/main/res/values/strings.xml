@@ -7,4 +7,25 @@
     <string name="about_introduction">
                 We are a leading non-state degree awarding institute...
     </string>
+    <string name="google_map_api_key">AIzaSyBHEp6jPTVtOCF9PlFxghlMfYBgsVJ599g</string>
+
+    <string-array name="sliit_branches_name">
+        <item>SLIIT Metro</item>
+        <item>SLIIT - Malabe</item>
+        <item>SLIIT - Matara </item>
+        <item>SLIIT - Kandy</item>
+        <item>SLIIT - Kurunagala</item>
+        <item>SLIIT - Jaffna</item>
+    </string-array>
+
+    <string-array name="sliit_branches_description">
+        <item>SLIIT Metropolitan Campus \n\nBoC Merchant Tower \n# 28, St Michael’s Road, \nColombo 03. \n\nTel : +94(0)11 230 1904 \nFax: +94(0)11 230 1906</item>
+        <item>Sri Lanka Institute of Information Technology \n\nSLIIT Malabe Campus,New Kandy Road,\nMalabe.\n\nTel : +94(0)11 241 3900 \nFax : +94(0)11 241 3901 \nEmail : info@sliit.lk</item>
+        <item>SLIIT Matara Centre \n\nNo. 24, E.H.Cooray Building,\nAnagarika Dharmapala Mawatha,Matara.\n\nTel : +94(0)41 222 2958\nHotline : 0777 41 46 47\nFax : +94(0)41 222 1048</item>
+        <item>SLIIT Kandy Campus \n\nNo 670/1/1A, Peradeniya Road,\nKandy.\n\nTel : +94(0)81 238 7888\nFax : +94(0)81 238 7888\nHotline : +94(0)77 020 4204</item>
+        <item>SLIIT Kurunagala Center \n\nNo 76,\nMihiduMawatha,\nKurunagala.\n\nTel : +94(0) 37 720 4204</item>
+        <item>SLIIT Jaffna Center \n\nNo 53,\nPoint Pedro Road,\nJaffna.\n\nTel : +94(0)21 720 0406\nFax : +94(0)21 720 0407</item>
+    </string-array>
+
+
 </resources>
