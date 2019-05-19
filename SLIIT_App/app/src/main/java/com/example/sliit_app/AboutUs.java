@@ -54,6 +54,7 @@ public class AboutUs extends Fragment implements OnMapReadyCallback {
         return view;
     }
 
+    //Initialize the google map
     private void initGoogleMap(Bundle savedInstanceState) {
         // *** IMPORTANT ***
         // MapView requires that the Bundle you pass contain _ONLY_ MapView SDK
@@ -82,6 +83,7 @@ public class AboutUs extends Fragment implements OnMapReadyCallback {
         mapView.onSaveInstanceState(mapViewBundle);
     }
 
+    /*Life Cycle methods used in android. Needed to implement Map view(google maps object)*/
     @Override
     public void onResume() {
         super.onResume();
@@ -100,6 +102,7 @@ public class AboutUs extends Fragment implements OnMapReadyCallback {
         mapView.onStop();
     }
 
+    //Sets up the markers, set the camera position and register on click listeners on markers to get the user selected master and update text fields
     @Override
     public void onMapReady(GoogleMap googleMap) {
         MarkerOptions sliitMetro = new MarkerOptions().position(SLIIT_METRO).title("SLIIT Metro");
@@ -185,13 +188,8 @@ public class AboutUs extends Fragment implements OnMapReadyCallback {
 
     }
 
-//    @Override
-//    public void onMapReady(GoogleMap googleMap) {
-//        googleMap.setMinZoomPreference(12);
-//        LatLng ny = new LatLng(40.7143528, -74.0059731);
-//        googleMap.moveCamera(CameraUpdateFactory.newLatLng(ny));
-//    }
 
+    /*Life Cycle methods used in android. Needed to implement Map view(google maps object)*/
     @Override
     public void onPause() {
         mapView.onPause();

@@ -16,6 +16,7 @@ import java.util.TimerTask;
 
 public class DashBoard extends Fragment {
 
+    //Creates the Slide show using view pager and places it inside the fragment_dashboard
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class DashBoard extends Fragment {
         final ImageAdapter imageAdapter = new ImageAdapter(this.getContext());
         viewPager.setAdapter(imageAdapter);
 
+        //Handles the image transitions sequentially
         final Handler handler = new Handler();
         final Runnable Update = new Runnable() {
             private int currentPage = 0;
@@ -36,6 +38,8 @@ public class DashBoard extends Fragment {
                 viewPager.setCurrentItem(currentPage++, false);
             }
         };
+
+        //Setting up a timer to automatically do the image transitions
         Timer swipeTimer = new Timer();
         swipeTimer.schedule(new TimerTask() {
             @Override

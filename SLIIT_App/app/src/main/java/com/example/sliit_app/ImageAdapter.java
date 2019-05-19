@@ -1,3 +1,4 @@
+//Image Adapter - Overrides methods in PageAdapter to place the image files inside a image view container
 package com.example.sliit_app;
 
 import android.content.Context;
@@ -40,6 +41,7 @@ public class ImageAdapter extends PagerAdapter {
         return imageView;
     }
 
+    //Removes the image from the image container
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
         container.removeView((ImageView) object);
