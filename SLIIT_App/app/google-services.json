@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "945040389447",
+    "firebase_url": "https://sliit-app-ca751.firebaseio.com",
+    "project_id": "sliit-app-ca751",
+    "storage_bucket": "sliit-app-ca751.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945040389447:android:8ae707fdd13dd2a9",
+        "android_client_info": {
+          "package_name": "com.example.sliit_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945040389447-ha1l9vse5a98fiaas09rei84f6e1st1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHEp6jPTVtOCF9PlFxghlMfYBgsVJ599g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945040389447-ha1l9vse5a98fiaas09rei84f6e1st1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

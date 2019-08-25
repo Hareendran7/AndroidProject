@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/contact_us_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/browser_actions_title_color"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_us_heading"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorDarkBlue"/>
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/colorDarkBlue"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_email"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/colorDarkBlue"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txt_subject"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_phone"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/colorDarkBlue"
+        android:ems="10"
+        android:hint="Subject"
+        android:inputType="textPersonName"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txt_message"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txt_subject"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/colorDarkBlue"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:paddingTop="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_message"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:background="@color/colorOrange"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:background="@color/colorOrange"
+        android:text="View"
+        android:layout_marginTop="17dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="SLIIT Malabe Campus, New Kandy Road,Malabe\n+94 11 754 4801\n+94 11 241 3901\ninfo@sliit.lk"
+        android:textSize="12dp"
+        android:layout_below="@+id/btn_view"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/browser_actions_title_color"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_foc"
+            android:icon="@drawable/ic_faculty"
+            android:title="Faculty of Computing" />
+        <item
+            android:id="@+id/nav_foe"
+            android:icon="@drawable/ic_faculty"
+            android:title="Faculty of Engineering" />
+        <item
+            android:id="@+id/nav_fob"
+            android:icon="@drawable/ic_faculty"
+            android:title="Faculty of Business" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_about_us"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_contact_us"
+            android:title="Contact Us" />
+    </group>
+
+    <item android:title="Current Student">
+        <menu>
+            <item
+                android:id="@+id/nav_student_web"
+                android:icon="@drawable/ic_student_web"
+                android:title="Student web" />
+        </menu>
+    </item>
+
+</menu>

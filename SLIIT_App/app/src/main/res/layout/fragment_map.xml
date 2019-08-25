@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:id="@+id/sliit_contact_details">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:textSize="12dp"
+                android:text="Name"
+                android:textColor="@color/browser_actions_title_color"/>
+
+            <TextView
+                android:id="@+id/txt_sliit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:textSize="14dp"
+                android:text="SLIIT Metro"
+                android:textColor="@color/browser_actions_text_color"/>
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_sliit_name"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:textSize="12dp"
+                android:text="Description"
+                android:textColor="@color/browser_actions_title_color"/>
+
+            <TextView
+                android:id="@+id/txt_sliit_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_description"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:textSize="14dp"
+                android:text="SLIIT Metropolitan Campus \n\nBoC Merchant Tower \n# 28, St Michael’s Road, \nColombo 03. \n\nTel : +94(0)11 230 1904 \nFax: +94(0)11 230 1906"
+                android:textColor="@color/browser_actions_text_color"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="65"
+            android:id="@+id/map_container">
+
+            <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/sliit_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
